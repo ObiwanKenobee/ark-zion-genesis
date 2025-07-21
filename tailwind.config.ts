@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -42,7 +43,8 @@ export default {
 				},
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					foreground: 'hsl(var(--accent-foreground))',
+					glow: 'hsl(var(--accent-glow))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -51,6 +53,10 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				'sacred-red': {
+					DEFAULT: 'hsl(var(--sacred-red))',
+					foreground: 'hsl(var(--sacred-red-foreground))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -84,11 +90,63 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-sacred': {
+					'0%, 100%': { 
+						opacity: '1',
+						transform: 'scale(1)'
+					},
+					'50%': { 
+						opacity: '0.8',
+						transform: 'scale(1.05)'
+					}
+				},
+				'soundwave': {
+					'0%, 100%': { 
+						transform: 'scaleY(0.3)',
+						opacity: '0.6'
+					},
+					'50%': { 
+						transform: 'scaleY(1)',
+						opacity: '1'
+					}
+				},
+				'float': {
+					'0%, 100%': { 
+						transform: 'translateY(0px)'
+					},
+					'50%': { 
+						transform: 'translateY(-10px)'
+					}
+				},
+				'glow': {
+					'0%, 100%': { 
+						boxShadow: '0 0 20px hsl(var(--accent-glow) / 0.3)'
+					},
+					'50%': { 
+						boxShadow: '0 0 40px hsl(var(--accent-glow) / 0.6)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-sacred': 'pulse-sacred 3s ease-in-out infinite',
+				'soundwave': 'soundwave 1.5s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite',
+				'glow': 'glow 4s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-sacred': 'var(--gradient-sacred)',
+				'gradient-mystical': 'var(--gradient-mystical)',
+				'gradient-hero': 'var(--gradient-hero)'
+			},
+			boxShadow: {
+				'sacred': 'var(--shadow-sacred)',
+				'deep': 'var(--shadow-deep)',
+				'glow-primary': 'var(--glow-primary)',
+				'glow-accent': 'var(--glow-accent)'
 			}
 		}
 	},

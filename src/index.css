@@ -8,33 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Zion Genesis Design System - Spiritual Tech Aesthetic */
+    
+    /* Core Colors - Rastafarian inspired with tech overlay */
+    --background: 22 15% 8%;           /* Deep earth tone */
+    --foreground: 45 80% 85%;          /* Warm golden text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 22 25% 12%;                /* Rich dark cards */
+    --card-foreground: 45 70% 80%;     /* Golden card text */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 22 30% 10%;             /* Dark mystical popovers */
+    --popover-foreground: 45 75% 85%;  /* Golden popover text */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Sacred Green (Tree of Life) */
+    --primary: 140 60% 25%;            /* Deep sacred green */
+    --primary-foreground: 45 90% 90%;  /* Light golden text */
+    --primary-glow: 140 70% 35%;       /* Brighter green for glows */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Earth Wisdom */
+    --secondary: 30 25% 15%;           /* Earth brown */
+    --secondary-foreground: 45 60% 75%; /* Warm golden text */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted - Mountain Mist */
+    --muted: 22 20% 15%;               /* Soft earth tone */
+    --muted-foreground: 45 40% 60%;    /* Muted golden text */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Divine Gold */
+    --accent: 45 85% 50%;              /* Brilliant gold */
+    --accent-foreground: 22 50% 15%;   /* Dark text on gold */
+    --accent-glow: 45 95% 60%;         /* Bright gold glow */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Sacred Red - Strength & Passion */
+    --sacred-red: 0 70% 35%;           /* Deep sacred red */
+    --sacred-red-foreground: 45 80% 85%; /* Golden text on red */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 45 80% 85%;
+
+    --border: 22 30% 20%;              /* Subtle earth borders */
+    --input: 22 25% 18%;               /* Input backgrounds */
+    --ring: 45 85% 50%;                /* Golden focus rings */
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(140 60% 25%), hsl(140 70% 35%));
+    --gradient-sacred: linear-gradient(135deg, hsl(45 85% 50%), hsl(30 80% 45%));
+    --gradient-mystical: linear-gradient(180deg, hsl(22 15% 8%), hsl(22 25% 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(22 15% 8%) 0%, hsl(140 30% 15%) 50%, hsl(45 60% 25%) 100%);
+
+    /* Shadows & Effects */
+    --shadow-sacred: 0 10px 30px -5px hsl(45 85% 50% / 0.3);
+    --shadow-deep: 0 20px 40px -10px hsl(22 50% 5% / 0.8);
+    --glow-primary: 0 0 30px hsl(140 70% 35% / 0.4);
+    --glow-accent: 0 0 40px hsl(45 95% 60% / 0.3);
 
     --radius: 0.5rem;
 
